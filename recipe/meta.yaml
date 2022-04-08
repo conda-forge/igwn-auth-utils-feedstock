@@ -1,5 +1,5 @@
 {% set name = "igwn-auth-utils" %}
-{% set version = "0.2.1" %}
+{% set version = "0.2.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0b1ffd8d4fda3277909186fbcb9d3175af266fe9f25caeabb86c98246d8cab2c
+  sha256: 96fff480f59cf143122595ecc9195d2205e24deecc90761fd3c50d34eca8a0ab
 
 build:
   noarch: python
@@ -22,9 +22,12 @@ requirements:
     - setuptools-scm
     - wheel
   run:
-    - cryptography
+    - cryptography >=2.3
     - scitokens >=1.7.0
     - python >=3.6
+  run_constrained:
+    - requests >=2.14
+    - safe_netrc >=1.0.0
 
 test:
   requires:
