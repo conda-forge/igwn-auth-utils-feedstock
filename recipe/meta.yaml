@@ -1,5 +1,5 @@
 {% set name = "igwn-auth-utils" %}
-{% set version = "0.2.3" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 17ea61ef47dd642a572e887f37f5181613d8882ed4b917b1279cdb188859de3c
+  sha256: 496d9aa87032f10ca01967ed008bc9a19826ab03ae293084dbcbe08820e39d43
 
 build:
   noarch: python
@@ -18,16 +18,15 @@ requirements:
   host:
     - pip
     - python >=3.6
-    - setuptools >=38.2.5
-    - setuptools-scm
+    - setuptools >=42
+    - setuptools-scm >=3.4.3
     - wheel
   run:
     - cryptography >=2.3
-    - scitokens >=1.7.0
     - python >=3.6
-  run_constrained:
     - requests >=2.14
-    - safe_netrc >=1.0.0
+    - safe-netrc >=1.0.0
+    - scitokens >=1.7.0
 
 test:
   requires:
@@ -35,9 +34,10 @@ test:
     - pytest >=3.6.3
     - requests
     - requests-mock
-    - safe-netrc
   commands:
+    # check requirements
     - python -m pip check
+    # run test suite
     - python -m pytest --pyargs igwn_auth_utils.tests
 
 about:
