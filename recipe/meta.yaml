@@ -36,7 +36,8 @@ test:
     - requests-mock
   commands:
     # check requirements
-    - python -m pip check
+    - python -m pip check igwn-auth-utils
+    - python -m pip show igwn-auth-utils
     # run test suite
     - python -m pytest --pyargs igwn_auth_utils.tests
 
