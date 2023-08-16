@@ -1,11 +1,11 @@
-About igwn-auth-utils
-=====================
+About igwn-auth-utils-feedstock
+===============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/igwn-auth-utils-feedstock/blob/main/LICENSE.txt)
 
 Home: https://igwn-auth-utils.readthedocs.io
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/igwn-auth-utils-feedstock/blob/main/LICENSE.txt)
 
 Summary: Authorisation utilities for IGWN
 
