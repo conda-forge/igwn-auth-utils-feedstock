@@ -32,6 +32,7 @@ test:
   requires:
     - pip
     - pytest >=3.6.3
+    - python < 3.12.0a0
     - requests
     - requests-mock
   commands:
