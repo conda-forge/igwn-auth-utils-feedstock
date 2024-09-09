@@ -1,13 +1,13 @@
 {% set name = "igwn-auth-utils" %}
-{% set version = "1.1.0" %}
+{% set version = "1.1.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f993f0ed8b83538a14df7dda540eb2dcaebd26aa0b058fffa105cd6de2d16e69
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: be787dc31227c3b497f44d88440eb81a6e069225c57c66647a420d93fbe79476
 
 build:
   noarch: python
