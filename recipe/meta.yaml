@@ -1,5 +1,5 @@
 {% set name = "igwn-auth-utils" %}
-{% set version = "1.2.0" %}
+{% set version = "1.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: b6964ef56692fe6e7279aa4b18c68d069a4e2b9e42a6b237d89e780c1b093a24
+  sha256: 17785bef4b6d5c30661fa3491603823900e11954ae5a208550f40fb443d81de2
 
 build:
   noarch: python
@@ -43,7 +43,7 @@ test:
 
 about:
   home: https://igwn-auth-utils.readthedocs.io
-  dev_url: https://git.ligo.org/computing/igwn-auth-utils.git
+  dev_url: https://git.ligo.org/computing/software/igwn-auth-utils.git
   doc_url: https://igwn-auth-utils.readthedocs.io
   license: BSD-3-Clause
   license_family: BSD
