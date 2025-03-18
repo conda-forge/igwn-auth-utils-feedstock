@@ -9,7 +9,7 @@ Package license: BSD-3-Clause
 
 Summary: Authorisation utilities for IGWN
 
-Development: https://git.ligo.org/computing/igwn-auth-utils.git
+Development: https://git.ligo.org/computing/software/igwn-auth-utils.git
 
 Documentation: https://igwn-auth-utils.readthedocs.io
 
