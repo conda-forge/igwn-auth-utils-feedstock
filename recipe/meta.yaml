@@ -43,7 +43,8 @@ test:
     - python -m pip check
     - python -m pip show igwn-auth-utils
     # run test suite
-    - python -m pytest --pyargs igwn_auth_utils.tests
+    - python -m pytest --pyargs igwn_auth_utils.tests  # [unix]
+    - python -m pytest --pyargs igwn_auth_utils.tests -k "not test_kerberos and not test_get_token"  # [win]
 
 about:
   home: https://igwn-auth-utils.readthedocs.io
