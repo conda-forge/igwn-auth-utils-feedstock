@@ -22,8 +22,10 @@ requirements:
     - setuptools-scm >=3.4.3
     - wheel
   run:
+    - __unix  # [unix]
+    - __win  # [win]
     - cryptography >=44.0.1
-    - htgettoken >=2.1
+    - htgettoken >=2.1  # [unix]
     - python >={{ python_min }}
     - python-gssapi >=1.9.0
     - requests >=2.32.0
